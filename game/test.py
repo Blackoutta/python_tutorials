@@ -1,5 +1,3 @@
-
-
 def choice():
     option = input("choose a number.")
     if option == '1':
@@ -9,7 +7,7 @@ def choice():
 
 proceed_story = choice()
 
-if proceed_story == True:
-    print("proceed")
-else:
-    print("nope")
+# if proceed_story == True:
+#     print("proceed")
+# else:
+#     print("nope")

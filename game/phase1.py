@@ -2,6 +2,8 @@
 import math
 import random
 import sys
+import io
+
 player_name = False
 player_hp = 100
 man_in_black_hp = 100
