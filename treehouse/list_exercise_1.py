@@ -8,6 +8,7 @@ continents = [
               ]
 
 # Your code here
+# search for items with the initial "A" and run code on them exclusively
 for continent in continents:
     if continent[0] == "A":
         print("* " + continent)

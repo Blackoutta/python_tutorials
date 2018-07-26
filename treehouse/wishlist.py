@@ -15,10 +15,12 @@ video_games = [
 
 
 print("Books:")
+#for loop
 for book in books:
     print("*" + book)
 
 def display_wishlist(display_name, wishes):
+    #use copy to prevent loop error
     items = wishes.copy()
     print(display_name + ":")
     suggested_gift = items.pop[0]
