@@ -1,5 +1,18 @@
-Literally spent an entire afternoon to do this challenge, my brain somehow got them all passed, but I still don't feel like I can manipulate dictionary with ease...
+def add(*args):
+    total = 0
+    for num in args:
+        total += num
+    print(total)
+add(1,2,3,4,5)
 
-So the way I did my stats challenge is like a workaround where I extracted the teacher's name and their course-numbers, made them into a list, and set the list as the value of the newly-created dict variable: "personal_dict", in which the key is set to a placeholder number starting from 0. Then I used .values() method to extract the two values as lists and append them to a master list.
 
-Previously I had managed to extract the same data from a dict, and I output my "personal_dict" like this: {"Kenneth Love": 2, "Andrew Chalkley": 3}
+def packer(**kwargs):
+    print(kwargs)
+
+packer(name = "kenneth", num = 42, spanish_inquisition = None)
+
+
+def unpacker(first_name, last_name):
+    print("Hi, you are {} {}, right?".format(first_name, last_name))
+
+unpacker(**{"last_name": "Love", "first_name": "Kenneth"})

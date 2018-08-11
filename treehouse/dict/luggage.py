@@ -10,3 +10,17 @@ def unpacker(first_name=None, last_name=None):
     else:
         print("Hi, no name!")
 unpacker(**{"last_name": "Love", "first_name": "Kenneth"})
+
+
+course_minutes = {
+"Python Basics": 232,
+"Django Basics": 237,
+"Flask Basics": 189,
+"Java Basics": 133
+}
+
+for course, minutes in course_minutes.items():
+    print("{} is {} minutes long".format(course, minutes))
+
+for index, letter in enumerate("abcdefghijklmnopqrstuvwxyz", start = 1):
+    print("{}: {}".format(index, letter))
