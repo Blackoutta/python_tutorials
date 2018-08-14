@@ -81,10 +81,11 @@ def draw_map(player):
         print(output, end = line_end)
 
 def event_check():
+    random_monster = random.choice(characters.monster_ls)
     if random.randint(1, 100) > 70:
-        events.event_1(**characters.GHOST)
+        random.choice(events.event_ls)(**random_monster)
     elif random.randint(1, 100) > 50:
-        events.battle(**characters.GHOST)
+        events.battle(**random_monster)
 
 
 def game_loop():
@@ -94,28 +95,30 @@ def game_loop():
         clear_screen()
         draw_map(player)
         valid_moves = get_moves(player)
-        print("You're currently in room {}".format(player))
-        print("You can move {}".format(','.join(valid_moves)))
-        print("Enter QUIT to quit")
+        print("你目前的房间： {}".format(player))
+        print("你可以移动的方向： {}".format(','.join(valid_moves)))
+        print("你的当前生命值： {}".format(characters.player_hp))
+        print("\n输入 QUIT 来退出游戏")
+        print("输入一个方向：LEFT RIGHT UP DOWN， 并按回车进行移动！")
 
         move = input(">  ")
         move = move.upper()
 
         if move == 'QUIT':
-            print("\n ** See you next time! ** \n")
+            print("\n ** 下次再见！ ** \n")
             break
         if move in valid_moves:
             player = move_player(player, move)
             if player == door:
-                input("\n ** Congratulations! You have escaped the dungeon! ** \n")
+                input("\n ** 恭喜你！你逃出了这个阴暗的地牢。 ** \n")
                 playing = False
             else:
                 event_check()
         else:
-            input("\n **Invalid Move!**\n")
+            input("\n **请输入一个有效的方向！**\n")
 
     else:
-        if input("Play again? [Y/n]  ").lower() != "n":
+        if input("再次游玩？ [Y/n]  ").lower() != "n":
             game_loop()
 
 
@@ -129,7 +132,7 @@ def game_loop():
 # Program Runs
 
 clear_screen()
-print("Welcome to the dungeon!")
-input("Press return to start!")
+print("欢迎来到地下城！")
+input("请按回车开始游戏。")
 clear_screen()
 game_loop()

@@ -3,11 +3,13 @@ import characters
 import random
 
 def battle(name, hp, atk):
+    input("你遇到了一只凶猛的{}!".format(name))
+    system_feature.clear_screen()
     while True:
         system_feature.clear_screen()
         print("你的当前HP: {}".format(characters.player_hp))
-        print("{}的当前HP: {}".format(name, hp))
-
+        print("{}的当前HP: {}\n".format(name, hp))
+        input("回合开始!")
         monster_dmg = atk + random.randint(0,5)
         characters.player_hp -= monster_dmg
         input("{}对你造成了{}点伤害！".format(name, monster_dmg))
@@ -57,11 +59,25 @@ def event_1(name, hp, atk):
             input("{}: 啊...我看到了...匣中少女和伴随其而来的魍魉！".format(name))
             input("{}: 冒险者！我讨厌箱子！".format(name))
             input("{}向你发起进攻！".format(name))
-            battle(**characters.GHOST)
+            battle(name, hp, atk)
             break
 
 
+def event_2(name, hp, atk):
+    input("Test if event 2 is working.")
+
+def event_3(name, hp, atk):
+    input("Test if event 3 is working.")
+
+def event_4(name, hp, atk):
+    input("Test if event 4 is working.")
 
 
-if __name__ == "__main__":
-    event_1(**characters.GHOST)
+# if __name__ == "__main__":
+# random_monster = characters.monster_ls.pop(random.randint(0, len(characters.monster_ls) -1))
+
+event_ls = [
+event_1,
+event_2,
+event_3,
+event_4]
