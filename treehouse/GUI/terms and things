@@ -1,0 +1,19 @@
+Tk() - A Tkinter application. This is what is responsible for the window or application you see on your screen. You'll end up binding most things to this.
+
+mainloop() - The loop that keeps your Tkinter app running. This loop runs forever.
+
+Frame - An invisible box that you can put things in.
+
+Label - A piece of text on the screen.
+
+Button - A button (whodathunk?!)
+
+StringVar - A variable that holds onto a string.
+
+IntVar - A variable that holds onto an int.
+
+trace() - A way to follow the changes and access of a variable.
+
+columnconfigure() and rowconfigure() - Methods to configure the number and weight of columns and rows.
+
+pack() - Method to insert a widget in the available space.
