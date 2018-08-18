@@ -1,2 +1,1 @@
-import random
-
+from inheritance import Thief

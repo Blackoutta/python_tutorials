@@ -1,18 +1,9 @@
-import random
-import os
-import events
-import system_feature
-import characters
-
 CELLS = [(0,0), (1,0),(2,0),(3,0),(4,0),
          (0,1), (1,1),(2,1),(3,1),(4,1),
          (0,2), (1,2),(2,2),(3,2),(4,2),
          (0,3), (1,3),(2,3),(3,3),(4,3),
          (0,4), (1,4),(2,4),(3,4),(4,4)]
 
-
-
-# def draw_map():
 
 
 # Define functions
@@ -80,12 +71,6 @@ def draw_map(player):
                 output = tile.format("_|")
         print(output, end = line_end)
 
-def event_check():
-    random_monster = random.choice(characters.monster_ls)
-    if random.randint(1, 100) > 70:
-        random.choice(events.event_ls)(**random_monster)
-    elif random.randint(1, 100) > 50:
-        events.battle(**random_monster)
 
 
 def game_loop():
@@ -95,30 +80,29 @@ def game_loop():
         clear_screen()
         draw_map(player)
         valid_moves = get_moves(player)
-        print("你目前的房间： {}".format(player))
-        print("你可以移动的方向： {}".format(','.join(valid_moves)))
-        print("你的当前生命值： {}".format(characters.player_hp))
-        print("\n输入 QUIT 来退出游戏")
-        print("输入一个方向：LEFT RIGHT UP DOWN， 并按回车进行移动！")
+        print("You're currently in room {}".format(player))
+        print("You can move {}".format(','.join(valid_moves)))
+        print("Enter QUIT to quit")
 
         move = input(">  ")
         move = move.upper()
 
         if move == 'QUIT':
-            print("\n ** 下次再见！ ** \n")
+            print("\n ** See you next time! ** \n")
             break
         if move in valid_moves:
             player = move_player(player, move)
-            if player == door:
-                input("\n ** 恭喜你！你逃出了这个阴暗的地牢。 ** \n")
+            if player == monster:
+                input("\n ** Unfortunately, the monster in the room ate you! ** \n")
                 playing = False
-            else:
-                event_check()
+            if player == door:
+                input("\n ** Congratulations! You have escaped the dungeon! ** \n")
+                playing = False
         else:
-            input("\n **请输入一个有效的方向！**\n")
+            input("\n **Invalid Move!**\n")
 
     else:
-        if input("再次游玩？ [Y/n]  ").lower() != "n":
+        if input("Play again? [Y/n]  ").lower() != "n":
             game_loop()
 
 
@@ -132,7 +116,10 @@ def game_loop():
 # Program Runs
 
 clear_screen()
-print("欢迎来到地下城！")
-input("请按回车开始游戏。")
+print("Welcome to the dungeon!")
+input("Press return to start!")
 clear_screen()
 game_loop()
+
+
+
