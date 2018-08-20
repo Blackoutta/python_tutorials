@@ -2,8 +2,8 @@
 
 warrior_stats = {
     'job_name': "圣堂骑士",
-    'max_hp': 160,
-    'hp': 160,
+    'max_hp': 100,
+    'hp': 100,
     'mp': 100,
     'str': 160,
     'dex': 100,
@@ -26,8 +26,8 @@ mage_stats = {
 
 thief_stats = {
     'job_name': "盗贼头领",
-    'max_hp': 100,
-    'hp': 100,
+    'max_hp': 90,
+    'hp': 90,
     'mp': 50,
     'str': 100,
     'dex': 160,
@@ -58,7 +58,7 @@ fatty_stats = {
 
 necromancer_stats = {
     'monster_name':"死灵法师",
-    'hp': 80,
+    'hp': 50,
     'mp': 150,
     'str': 50,
     'dex': 50,

@@ -10,12 +10,12 @@ necromancer = Necromancer(necromancer_stats)
 
 
 
-
 class Events:
 
-    def __init__(self):
-        self.event_list = [self.event_1, self.event_2, self.event_3]  #放入做好的事件
-
+    def __init__(self, current_map, *args):
+        self.event_list = [self.event_1, self.event_2, self.event_3, self.event_4, self.event_5]  #放入做好的事件
+        # self.event_list = [self.event_4]  #放入做好的事件
+        self.existing_events = [current_map.key_1, current_map.key_2, current_map.key_3]
 # Checks
     def check_hp(self, current_player, monster):
         if current_player.hp > monster.hp:
@@ -49,22 +49,25 @@ class Events:
 
 # Events
 
-    def event_1(self, current_player):
+
+    def event_1(self, current_player, *arg):
         while True:
             clear_screen()
             input("一只无脑的僵尸出现在你面前...")
             input("僵尸: '人类...脑子...'")
             print("\n你会怎么做?")
-            choice = input("1. 冲上去攻击它!\n2. 从它身旁绕过去\n3. 问: 1+1等于几?\n\n请选择一个选项并按回车确认:     ")
+            choice = input("1. 冲上去攻击它!\n2. 从它身旁绕过去\n3. 问: 1+1等于几?\n\n请选择一个选项并按回车确认:   ")
             if choice == '1':
                 if self.check_str(current_player, zombie) and self.check_hp(current_player, zombie):
-                    input("你打败了僵尸！")
+                    damage = random.randint(5, 12)
+                    input("你打败了僵尸！只受了一些擦伤。")
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
                 else:
                     damage = random.randint(10, 30)
                     input("你不敌僵尸的攻势，被他击倒在地后，慌忙逃窜.")
                     input("你的HP减少了{}!".format(damage))
-                    # current_player.hp -= damage
                     current_player.hp -= damage
                     break
 
@@ -81,12 +84,12 @@ class Events:
                     break
 
             elif choice == '3':
-                if self.check_int(current_player, zombie):
+                if self.check_int(current_player, zombie) and random.choice([True, False]):
                     input("僵尸: 啊啊，等于几...1+1等于几...啊啊啊啊啊!")
                     input("僵尸的脑浆耗尽，倒在地上一动也不动了。")
                     break
                 else:
-                    damage = random.randint(20, 30)
+                    damage = random.randint(10, 20)
                     input("僵尸: 当然是等于2!我讨厌别人把我当傻瓜!")
                     input("你被僵尸的攻击擦过，慌忙逃了出去。")
                     input("你的HP减少了{}!".format(damage))
@@ -96,14 +99,14 @@ class Events:
                 input("请输入一个有效的数字！")
                 continue
 
-    def event_2(self, current_player):
+    def event_2(self, current_player, *arg):
         while True:
             clear_screen()
             input("一个面目猥琐的胖子出现在你的面前...")
             input("胖子: 什么人！来这里干什么！")
             print("\n你会怎么做?")
             choice = input(
-            "1. 撒腿就逃\n2. 假装是新来的同伴\n3. 抄家伙开始攻击\n\n请选择一个选项并按回车确认:     ")
+            "1. 撒腿就逃\n2. 假装是新来的同伴\n3. 抄家伙开始攻击\n\n请选择一个选项并按回车确认:   ")
             if choice == '1':
                 if self.check_hp(current_player, fatty):
                     damage = random.randint(5, 10)
@@ -120,11 +123,11 @@ class Events:
                     break
 
             elif choice == '2':
-                if self.check_int(current_player, fatty):
+                if self.check_int(current_player, fatty) and random.choice([True, False]):
                     input("胖子: 原来是新来的那谁谁。。进去吧，老大在里边呢。")
                     break
                 else:
-                    damage = random.randint(20, 40)
+                    damage = random.randint(15, 30)
                     input("胖子: 我不信，你肯定是冒牌的!")
                     input("你与胖子展开了一场恶战，你战胜了他，但...")
                     input("你的HP减少了{}!".format(damage))
@@ -133,8 +136,11 @@ class Events:
 
             elif choice == '3':
                 if self.check_dex(current_player, fatty):
+                    damage = random.randint(5, 12)
                     input("你与胖子展开了一场战斗。你没想到胖子竟然如此灵活，但你更胜一筹。")
-                    input("你战胜了胖子。")
+                    input("你战胜了胖子。但受了一些擦伤。")
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
                 else:
                     damage = random.randint(10, 25)
@@ -146,17 +152,21 @@ class Events:
                 input("请输入一个有效的数字！")
                 continue
 
-    def event_3(self, current_player):
+    def event_3(self, current_player, *arg):
         while True:
             clear_screen()
             input("你看见一个死灵法师正在练习黑魔法...")
             input("他看起来没有什么防备...")
             print("\n你会怎么做?")
-            choice = input("1. 展开偷袭\n2. 正面进攻\n\n请选择一个选项并按回车确认:     ")
+            choice = input("1. 展开偷袭\n2. 正面进攻\n\n请选择一个选项并按回车确认:   ")
             if choice == '1':
                 if self.check_int(current_player, necromancer):
+                    damage = random.randint(5, 10)
                     input("死灵法师早就觉察到你的到来并设下陷阱，然而你也早就看穿了这一点。")
                     input("你假装被陷阱所困，待死灵法师松懈之时，将他杀死。")
+                    input("你只受了一点擦伤。")
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
                 else:
                     damage = random.randint(17, 30)
@@ -181,6 +191,104 @@ class Events:
                     current_player.hp -= damage
                     break
 
+            else:
+                input("请输入一个有效的数字！")
+                continue
+
+    def event_4(self, current_player, current_map, *arg):
+
+        while True:
+            clear_screen()
+            input("你进入了一个被遗弃的刑房。房间中央有个被血迹侵蚀的铁处女。")
+            input("其中好像有什么东西在发光...")
+            print("\n你会怎么做?")
+            choice = input("1. 打开铁处女\n2. 离开\n\n请选择一个选项并按回车确认:   ")
+            if choice == '1':
+                if random.choice([True, True, False]) == True:
+                    if self.existing_events:
+                        clear_screen()
+                        input("你打开铁处女，里面是一张地图，上面标记了一个钥匙的位置。")
+                        input("钥匙的位置是: {}".format(random.choice(self.existing_events)))
+                        input("你刚看完，地图便自己化为了灰烬。")
+                        input("看来你需要自己记下这个房间的位置。")
+                        break
+                    else:
+                        clear_screen()
+                        input("铁处女里面除了血迹和腐烂的尸体，什么都没有了...")
+                        break
+                else:
+                    clear_screen()
+                    damage = random.randint(10, 20)
+                    input("你打开铁处女，迎面扑来一股腐臭的气息。这是一个陷阱。")
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
+                    break
+
+            elif choice == '2':
+                if current_player.key != 3:
+                    input("你觉得这是一个陷阱，所以你对铁处女弃之不顾。")
+                    input("但你总感觉里面有什么重要的东西...也许关系到你的逃生之路也说不定...")
+                else:
+                    input("你已经拥有了所有的钥匙，所以你选择离开这个不详的房间。")
+                break
+
+            else:
+                input("请输入一个有效的数字！")
+                continue
+
+    def event_5(self, current_player, *arg):
+        while True:
+            clear_screen()
+            input("你进入了一个布满火炬的房间，地上躺满了僵尸...")
+            input("你身后的铁门忽然关闭，你只有前方一个出口了...")
+            print("\n你会怎么做?")
+            choice = input("1. 用火烧掉这群僵尸的尸体\n2. 用暴力毁坏僵尸们的尸体\n3. 踩着僵尸的尸体过去\n\n请选择一个选项并按回车确认:   ")
+            if choice == '1':
+                if self.check_dex(current_player, zombie):
+                    input("在点燃尸体的过程中，一只未死的僵尸抓住了你的脚。")
+                    input("你的反应极快，躲过了僵尸的攻击并杀了了它。")
+                    input("你烧掉了房间里所有的僵尸。")
+                    break
+                else:
+                    damage = random.randint(15, 30)
+                    input("在点燃尸体的过程中，一只未死的僵尸抓住了你的脚。")
+                    input("你杀死了僵尸，但是还是被咬了一口。")
+                    input("你的HP减少了{}!".format(damage))
+                    # current_player.hp -= damage
+                    current_player.hp -= damage
+                    break
+
+            elif choice == '2':
+                input("你的攻击惊动了其他房间的僵尸，它们向你袭来！")
+                if self.check_hp(current_player, zombie):
+                    damage = random.randint(10, 15)
+                    input("你的体力充足，杀死了所有的僵尸，但...")
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
+                    break
+                else:
+                    damage = random.randint(25, 40)
+                    input("你奋勇战斗，但是体力不支，被僵尸打得落荒而逃。")
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
+                    break
+
+            elif choice == '3':
+                input("你踩着僵尸的尸体走向房间的出口...")
+                input("一只僵尸突然跃起将你按到在地。")
+                if self.check_str(current_player, zombie):
+                    damage = random.randint(7, 13)
+                    input("你的力气很大，在僵尸咬到你之前挣脱了它, 但受了一些擦伤。")
+                    input("你杀死了这只僵尸并走到了出口。")
+                    input("你的HP减少了{}!".format(damage))
+                    break
+                else:
+                    damage = random.randint(25, 35)
+                    input("你无法挣脱僵尸，被它咬了几口。")
+                    input("你杀死了这只僵尸并走到了出口。")
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
+                    break
             else:
                 input("请输入一个有效的数字！")
                 continue

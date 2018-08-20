@@ -23,12 +23,12 @@ class Map:
                     output = tile.format("X")
                 elif cell == self.door:
                     output = tile.format("O")
-                elif cell == self.key_1:
-                    output = tile.format("J")
-                elif cell == self.key_2:
-                    output = tile.format("J")
-                elif cell == self.key_3:
-                    output = tile.format("J")
+                # elif cell == self.key_1:
+                #     output = tile.format("J")
+                # elif cell == self.key_2:
+                #     output = tile.format("J")
+                # elif cell == self.key_3:
+                #     output = tile.format("J")
                 else:
                     output = tile.format("_")
             else: #Right Walls
@@ -37,15 +37,16 @@ class Map:
                     output = tile.format("X|")
                 elif cell == self.door:
                     output = tile.format("O|")
-                elif cell == self.key_1:
-                    output = tile.format("J|")
-                elif cell == self.key_2:
-                    output = tile.format("J|")
-                elif cell == self.key_3:
-                    output = tile.format("J|")
+                # elif cell == self.key_1:
+                #     output = tile.format("J|")
+                # elif cell == self.key_2:
+                #     output = tile.format("J|")
+                # elif cell == self.key_3:
+                #     output = tile.format("J|")
                 else:
                     output = tile.format("_|")
             print(output, end = line_end)
+        print("\n X 代表 玩家\n O代表 地牢大门")
 
     def get_moves(self):
         moves = ["LEFT", "RIGHT", "UP", "DOWN"]
