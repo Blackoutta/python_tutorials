@@ -2,27 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54e27bd9-8869-473d-b60b-e0874c78f19e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hardway/OOP.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hardway/ex43_classes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hardway/ex43_classes_solution.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hardway/job_stats.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/dungeon_oop.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/treehouse/object/advanced/morse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/treehouse/object/advanced/numstring.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/treehouse/object/inheritance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/treehouse/object/instance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/treehouse/object/inventory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/treehouse/object/rpg/attributes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/treehouse/object/rpg/characters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/treehouse/object/rpg/play.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/treehouse/object/rpg/thieves.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/characters.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/dungeon_game_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/dungeon_game_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/events.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/system_feature.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/treehouse/object/characters.py" beforeDir="false" afterPath="$PROJECT_DIR$/treehouse/object/characters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treehouse/object/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/treehouse/object/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/treehouse/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/treehouse/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/events.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/job_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/job_stats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treehouse/object/advanced/numstring.py" beforeDir="false" afterPath="$PROJECT_DIR$/treehouse/object/advanced/numstring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treehouse/object/inheritance.py" beforeDir="false" afterPath="$PROJECT_DIR$/treehouse/object/inheritance.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,16 +18,16 @@
     <session id="29153156">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.2" value="4" />
-          <entry key="project.open.time.3" value="4" />
+          <entry key="project.open.time.3" value="5" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="71" />
+          <entry key="py" value="74" />
           <entry key="terms and things" value="2" />
           <entry key="txt" value="1" />
         </counts>
@@ -51,21 +35,21 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="71" />
+          <entry key="Python" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="2850" />
+          <entry key="Python Console" value="3613" />
           <entry key="dummy" value="10" />
-          <entry key="py" value="8089" />
+          <entry key="py" value="9133" />
           <entry key="txt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="35" />
-          <entry key="Python" value="10939" />
+          <entry key="Python" value="12746" />
         </counts>
       </usages-collector>
     </session>
@@ -73,25 +57,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/dungeon_game_v2.py">
+        <entry file="file://$PROJECT_DIR$/treehouse/object/advanced/numstring.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="231">
+              <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/dungeon_oop.py">
+        <entry file="file://$PROJECT_DIR$/treehouse/object/advanced/morse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-              <folding>
-                <marker date="1534497564447" expanded="true" signature="219:220" ph="..." />
-                <marker date="1534497564447" expanded="true" signature="358:363" ph="..." />
-                <marker date="1534497564447" expanded="true" signature="487:488" ph="..." />
-                <marker date="1534497564447" expanded="true" signature="487:490" ph="..." />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -124,7 +102,6 @@
         <option value="$PROJECT_DIR$/treehouse/object/master_class.py" />
         <option value="$PROJECT_DIR$/treehouse/object/characters.py" />
         <option value="$PROJECT_DIR$/treehouse/object/test.py" />
-        <option value="$PROJECT_DIR$/treehouse/object/inheritance.py" />
         <option value="$PROJECT_DIR$/treehouse/object/inventory.py" />
         <option value="$PROJECT_DIR$/treehouse/object/characters2.py" />
         <option value="$PROJECT_DIR$/treehouse/object/rpg/attributes.py" />
@@ -132,7 +109,6 @@
         <option value="$PROJECT_DIR$/treehouse/object/instance.py" />
         <option value="$PROJECT_DIR$/treehouse/object/rpg/play.py" />
         <option value="$PROJECT_DIR$/treehouse/object/rpg/characters.py" />
-        <option value="$PROJECT_DIR$/treehouse/object/advanced/numstring.py" />
         <option value="$PROJECT_DIR$/treehouse/object/advanced/morse.py" />
         <option value="$PROJECT_DIR$/treehouse/test.py" />
         <option value="$PROJECT_DIR$/hardway/ex43_classes.py" />
@@ -141,14 +117,15 @@
         <option value="$PROJECT_DIR$/hardway/test.py" />
         <option value="$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/dungeon_game_v2.py" />
         <option value="$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/dungeon_oop.py" />
+        <option value="$PROJECT_DIR$/treehouse/object/inheritance.py" />
+        <option value="$PROJECT_DIR$/treehouse/object/advanced/numstring.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="406" />
-    <option name="y" value="2" />
-    <option name="width" value="1438" />
-    <option name="height" value="1045" />
+    <option name="x" value="503" />
+    <option name="width" value="1360" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -158,6 +135,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="python_learning" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="python_learning" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="treehouse" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="python_learning" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="treehouse" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="object" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="python_learning" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="treehouse" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="object" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="advanced" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,40 +188,6 @@
               <item name="treehouse" type="462c0819:PsiDirectoryNode" />
               <item name="dungeon" type="462c0819:PsiDirectoryNode" />
               <item name="dungeon_v2" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="python_learning" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="python_learning" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="hardway" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="python_learning" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="treehouse" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="python_learning" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="treehouse" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="dungeon" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="python_learning" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="treehouse" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="dungeon" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="dungeon_v2" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -250,28 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="characters" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_learning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/treehouse/object/rpg" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/treehouse/object/rpg/characters.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.numstring">
     <configuration name="ex43_classes_solution" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -285,6 +236,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hardway/ex43_classes_solution.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="inheritance" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/treehouse/object" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/treehouse/object/inheritance.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -318,9 +287,6 @@
       <module name="python_learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/treehouse/object/advanced" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -357,17 +323,17 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.characters" />
       <item itemvalue="Python.numstring" />
       <item itemvalue="Python.morse" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.ex43_classes_solution" />
+      <item itemvalue="Python.inheritance" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.numstring" />
+        <item itemvalue="Python.inheritance" />
+        <item itemvalue="Python.inheritance" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.test" />
       </list>
@@ -404,9 +370,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="406" y="2" width="1438" height="1045" extended-state="0" />
+    <frame x="503" y="0" width="1360" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.165" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23600605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -419,7 +386,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32781458" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3289183" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.32711306" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.40507725" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -565,13 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/treehouse/object/advanced/numstring.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/treehouse/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -596,13 +556,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/treehouse/set/set_basics.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/treehouse/object/advanced/morse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hardway/ex43_classes.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -653,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/treehouse/object/inheritance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hardway/job_stats.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -690,23 +636,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/dungeon_oop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-          <folding>
-            <marker date="1534497564447" expanded="true" signature="219:220" ph="..." />
-            <marker date="1534497564447" expanded="true" signature="358:363" ph="..." />
-            <marker date="1534497564447" expanded="true" signature="487:488" ph="..." />
-            <marker date="1534497564447" expanded="true" signature="487:490" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/dungeon_game_v2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treehouse/dungeon/dungeon_v2/dungeon_oop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treehouse/object/inheritance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="24" column="41" lean-forward="true" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+          <folding>
+            <marker date="1534829445204" expanded="true" signature="465:470" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treehouse/object/advanced/morse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/treehouse/object/advanced/numstring.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
         </state>
       </provider>
     </entry>

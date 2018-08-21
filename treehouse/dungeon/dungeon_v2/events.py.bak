@@ -48,10 +48,10 @@ class Events:
             return False
 
 # Events
-    def calc_dmg(self, current_player, min, max):
-        self.damage = random.randint(min, max)
+    def calc_dmg(self, min, max, current_player):
+        self.damage = random.randint(7, 12)
         input("你的HP减少了{}!".format(self.damage))
-        current_player.hp -= self.damage
+        current_player.hp -= damage
 
 
     def event_1(self, current_player, *arg):
@@ -63,35 +63,45 @@ class Events:
             choice = input("1. 冲上去攻击它!\n2. 从它身旁绕过去\n3. 问: 1+1等于几?\n\n请选择一个选项并按回车确认:   ")
             if choice == '1':
                 if self.check_str(current_player, zombie) and self.check_hp(current_player, zombie):
+                    damage = random.randint(5, 12)
                     input("你打败了僵尸！只受了一些擦伤。")
-                    self.calc_dmg(current_player, 10, 15)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
                 else:
+                    damage = random.randint(10, 30)
                     input("你不敌僵尸的攻势，被他击倒在地后，慌忙逃窜.")
-                    self.calc_dmg(current_player, 20, 30)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
 
             elif choice == '2':
                 if self.check_dex(current_player, zombie):
                     input("你试图从僵尸身边饶过去，但僵尸的反应比你想象得快！")
                     input("还好你身手敏捷，只受了些擦伤。")
-                    self.calc_dmg(current_player, 8, 12)
+                    damage = random.randint(15, 40)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
                 else:
+                    damage = random.randint(15, 40)
                     input("僵尸比你想象中来得灵活，你被扑倒在地。")
                     input("在被咬了一口之后，你挣脱了出来，落荒而逃。")
-                    self.calc_dmg(current_player, 15, 35)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
 
             elif choice == '3':
-                if self.check_int(current_player, zombie) and random.choice([True, True, False]):
+                if self.check_int(current_player, zombie) and random.choice([True, False]):
                     input("僵尸: 啊啊，等于几...1+1等于几...啊啊啊啊啊!")
                     input("僵尸的脑浆耗尽，倒在地上一动也不动了。")
                     break
                 else:
+                    damage = random.randint(10, 20)
                     input("僵尸: 当然是等于2!我讨厌别人把我当傻瓜!")
                     input("你被僵尸的攻击擦过，慌忙逃了出去。")
-                    self.calc_dmg(current_player, 10, 20)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
             else:
                 input("请输入一个有效的数字！")
@@ -107,33 +117,44 @@ class Events:
             "1. 撒腿就逃\n2. 假装是新来的同伴\n3. 抄家伙开始攻击\n\n请选择一个选项并按回车确认:   ")
             if choice == '1':
                 if self.check_hp(current_player, fatty):
+                    damage = random.randint(5, 10)
                     input("胖子穷追不舍，但你体力充足，成功甩开了他！但...")
-                    self.calc_dmg(current_player, 10, 15)
+                    current_player.hp -= damage
+                    input("你的HP减少了{}!".format(damage))
                     break
                 else:
+                    damage = random.randint(15, 30)
                     input("胖子意外的灵活，你摆脱不了他。一场恶战之后，你勉强战胜了他，但...")
-                    self.calc_dmg(current_player, 20, 30)
+                    input("你的HP减少了{}!".format(damage))
+                    # current_player.hp -= damage
+                    current_player.hp -= damage
                     break
 
             elif choice == '2':
-                if self.check_int(current_player, fatty) and random.choice([True, True, False]):
+                if self.check_int(current_player, fatty) and random.choice([True, False]):
                     input("胖子: 原来是新来的那谁谁。。进去吧，老大在里边呢。")
                     break
                 else:
+                    damage = random.randint(15, 30)
                     input("胖子: 我不信，你肯定是冒牌的!")
                     input("你与胖子展开了一场恶战，你战胜了他，但...")
-                    self.calc_dmg(current_player, 20, 30)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
 
             elif choice == '3':
                 if self.check_dex(current_player, fatty):
+                    damage = random.randint(5, 12)
                     input("你与胖子展开了一场战斗。你没想到胖子竟然如此灵活，但你更胜一筹。")
                     input("你战胜了胖子。但受了一些擦伤。")
-                    self.calc_dmg(current_player, 10, 13)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
                 else:
+                    damage = random.randint(10, 25)
                     input("你没想到这个胖子竟然如此灵活，一场恶战之后，你战胜了胖子，但...")
-                    self.calc_dmg(current_player, 15, 25)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
             else:
                 input("请输入一个有效的数字！")
@@ -148,26 +169,34 @@ class Events:
             choice = input("1. 展开偷袭\n2. 正面进攻\n\n请选择一个选项并按回车确认:   ")
             if choice == '1':
                 if self.check_int(current_player, necromancer):
+                    damage = random.randint(5, 10)
                     input("死灵法师早就觉察到你的到来并设下陷阱，然而你也早就看穿了这一点。")
                     input("你假装被陷阱所困，待死灵法师松懈之时，将他杀死。")
                     input("你只受了一点擦伤。")
-                    self.calc_dmg(current_player, 10, 20)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
                 else:
+                    damage = random.randint(17, 30)
                     input("死灵法师早就觉察到你的到来并设下陷阱。一场恶战之后，你勉强战胜了他，但...")
-                    self.calc_dmg(current_player, 17, 30)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
 
             elif choice == '2':
                 if self.check_hp(current_player, necromancer):
+                    damage = random.randint(5, 15)
                     input("你从正面进攻死灵法师。但它忽然召唤出一群僵尸。")
                     input("费了一番力气，你战胜了死灵法师和他的爪牙，但...")
-                    self.calc_dmg(current_player, 10, 18)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
                 else:
+                    damage = random.randint(20, 40)
                     input("你从正面进攻死灵法师。但它忽然召唤出一群僵尸。")
                     input("你寡不敌众，被打得落荒而逃。")
-                    self.calc_dmg(current_player, 20, 40)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
 
             else:
@@ -197,8 +226,10 @@ class Events:
                         break
                 else:
                     clear_screen()
+                    damage = random.randint(10, 20)
                     input("你打开铁处女，迎面扑来一股腐臭的气息。这是一个陷阱。")
-                    self.calc_dmg(current_player, 10, 20)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
 
             elif choice == '2':
@@ -225,37 +256,49 @@ class Events:
                     input("在点燃尸体的过程中，一只未死的僵尸抓住了你的脚。")
                     input("你的反应极快，躲过了僵尸的攻击并杀了了它。不过受了一些擦伤。")
                     input("你烧掉了房间里所有的僵尸。")
-                    self.calc_dmg(current_player, 12, 15)
+                    damage = random.randint(7, 12)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
                 else:
+                    damage = random.randint(15, 30)
                     input("在点燃尸体的过程中，一只未死的僵尸抓住了你的脚。")
                     input("你杀死了僵尸，但是还是被咬了一口。")
-                    self.calc_dmg(current_player, 15, 30)
+                    input("你的HP减少了{}!".format(damage))
+                    # current_player.hp -= damage
+                    current_player.hp -= damage
                     break
 
             elif choice == '2':
                 input("你的攻击惊动了其他房间的僵尸，它们向你袭来！")
                 if self.check_hp(current_player, zombie):
+                    damage = random.randint(10, 15)
                     input("你的体力充足，杀死了所有的僵尸，但...")
-                    self.calc_dmg(current_player, 10, 15)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
                 else:
+                    damage = random.randint(25, 40)
                     input("你奋勇战斗，但是体力不支，被僵尸打得落荒而逃。")
-                    self.calc_dmg(current_player, 25, 40)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
 
             elif choice == '3':
                 input("你踩着僵尸的尸体走向房间的出口...")
                 input("一只僵尸突然跃起将你按到在地。")
                 if self.check_str(current_player, zombie):
+                    damage = random.randint(7, 13)
                     input("你的力气很大，在僵尸咬到你之前挣脱了它, 但受了一些擦伤。")
                     input("你杀死了这只僵尸并走到了出口。")
-                    self.calc_dmg(current_player, 15, 20)
+                    input("你的HP减少了{}!".format(damage))
                     break
                 else:
+                    damage = random.randint(25, 35)
                     input("你无法挣脱僵尸，被它咬了几口。")
                     input("你杀死了这只僵尸并走到了出口。")
-                    self.calc_dmg(current_player, 25, 35)
+                    input("你的HP减少了{}!".format(damage))
+                    current_player.hp -= damage
                     break
             else:
                 input("请输入一个有效的数字！")

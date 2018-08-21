@@ -8,7 +8,7 @@ warrior_stats = {
     'str': 160,
     'dex': 100,
     'int': 50,
-    'potion': 2,
+    'potion': 3,
     'key': 0
 }
 
@@ -20,7 +20,7 @@ mage_stats = {
     'str': 50,
     'dex': 50,
     'int': 160,
-    'potion': 2,
+    'potion': 3,
     'key': 0
 }
 
@@ -32,7 +32,7 @@ thief_stats = {
     'str': 100,
     'dex': 160,
     'int': 100,
-    'potion': 2,
+    'potion': 3,
     'key': 0
 }
 

@@ -119,7 +119,7 @@ def game_loop():
 
 
             # 触发随机事件
-            elif random.choice([True, False, False]) != False:
+            elif random.choice([True, False]) != False:
                 random.choice(current_events.event_list)(current_player, current_map)
 
             if current_player.hp <= 0:
