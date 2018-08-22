@@ -43,6 +43,16 @@ for person in BIRTHDAYS:
 # Loop through the people in BIRTHDAYS
 # If their birthday is between September (9)
 # And June (6), print their name
+print("School Year Birthday: ")
+for person in BIRTHDAYS:
+    name = person[0]
+    school_year = [9,10,11,12,1,2,3,4,5,6]
+    birth_date = person[1].split("/")
+    birth_date[1] = int(birth_date[1])
+    if birth_date[1] in school_year:
+        print(name)
+
+
 
 
 # Problem 4: Wishing stars
@@ -50,3 +60,9 @@ for person in BIRTHDAYS:
 # If the person celebrates their birthday,
 # AND their age is 10 or less,
 # Print out their name and as many stars as their age
+print("Wishing Stars:")
+for person in BIRTHDAYS:
+    name = person[0]
+    age = person[3]
+    if age <= 10:
+        print(name + ' *' * age)
