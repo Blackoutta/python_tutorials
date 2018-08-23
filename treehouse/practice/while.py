@@ -6,12 +6,6 @@
 
 current_oven_temp = 75
 
-while current_oven_temp < 350:
-    current_oven_temp += 25
-    print(current_oven_temp)
-else:
-    print("The oven is ready!")
-
 # Solution 1 here
 
 # Problem 2: Total and average
@@ -22,28 +16,6 @@ else:
 
 def total_and_average():
     numbers = []
-    sum = 0
-    while True:
-        user_input = input("please enter a number:  ")
-
-        if user_input != 'q':
-            try:
-                numbers.append(int(user_input))
-            except ValueError:
-                print("You must enter an integer.")
-        else:
-            print("List of your numbers: {}".format(numbers))
-            for i in numbers:
-                sum += i
-            average = sum / len(numbers)
-            print("Sum: {}".format(sum))
-            print("Average: {}".format(average))
-            break
-
-
-
-
-
     # Solution 2 here
 
 total_and_average()
