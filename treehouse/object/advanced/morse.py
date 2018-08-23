@@ -17,6 +17,21 @@ class Letter:
                 output.append("dash")
         return '-'.join(output)
 
+    def __iter__(self):
+        yield from self.pattern
+
+    @classmethod
+    def from_string(cls, string=None):
+        output = []
+        string_ls = string.split("-")
+        for i in string_ls:
+            if i == "dash":
+                output.append("_")
+            elif i == "dot":
+                output.append(".")
+        return cls(output)
+
+
 
 class S(Letter):
     def __init__(self):
@@ -25,4 +40,5 @@ class S(Letter):
 
 
 
-morse = S()
+
+morse = Letter.from_string("dash-dot-dash-dot")
