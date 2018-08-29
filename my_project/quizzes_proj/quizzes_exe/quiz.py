@@ -79,6 +79,15 @@ def quiz_loop():
     else:
         clear_screen()
         print("你一共答对了{}/{}道题目！".format(correct_count, quiz_num))
+        if correct_count == quiz_num:
+            rating = "天秀"
+        elif correct_count / quiz_num > 0.7:
+            rating = "优秀"
+        elif correct_count / quiz_num > 0.3:
+            rating = "一般秀"
+        else:
+            rating = "再接再厉秀"
+        print("\n你的评价是: ** {} **".format(rating))
         again = input("\n再试一次? Y/N:  ")
         if again.lower() != "n":
             quiz_loop()

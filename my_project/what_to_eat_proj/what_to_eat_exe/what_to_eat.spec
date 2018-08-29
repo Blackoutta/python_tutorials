@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['what_to_eat.py'],
-             pathex=['C:\\Users\\huyangyi\\desktop\\python_learning\\my_project\\what_to_eat_bak'],
+             pathex=['E:\\python_repo\\my_project\\what_to_eat_proj\\what_to_eat_exe'],
              binaries=[],
              datas=[],
              hiddenimports=[],
